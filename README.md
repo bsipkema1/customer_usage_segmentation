@@ -84,4 +84,16 @@ Boxplots were also created for each of the five usage variables. The visualizati
 
 *Boxplots of the five customer usage variables highlighting the presence and distribution of potential outliers.*
 
+### Customer Segmentation & PCA
+
+K-means clustering was used to group customers with similar usage behaviors across the five variables. Before clustering, the variables were standardized to prevent differences in measurement scale from disproportionately influencing the distance calculations. The analysis grouped the customer records into **five clusters**.
+
+Because the clustering analysis used five dimensions, Principal Component Analysis (PCA) was applied to create a two-dimensional representation of the results. The PCA projection provides a visual way to examine how customers within the five clusters relate to one another based on their combined usage patterns.
+
+The visualization shows a dense concentration of customers near the center of the projection, with overlap among several clusters. It also identifies customers and portions of clusters that extend farther from the central group, demonstrating greater differences in their overall usage patterns. Rather than indicating five completely separate customer groups, the projection shows both similarities and differences among the segments identified through K-means clustering.
+
+![K-means Clusters PCA Projection](images/kmeans_pca_clusters.png)
+
+*K-means customer segments visualized in two dimensions using Principal Component Analysis.*
+
 
