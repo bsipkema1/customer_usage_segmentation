@@ -15,3 +15,22 @@ The objective of this project was to analyze customer telephone usage data and i
 - Are there unusual or extreme usage patterns within the dataset?
 - Can customers be grouped into distinct segments based on similar usage behaviors?
 - How can dimensionality reduction help visualize differences among the identified customer segments?
+
+## 📁 Dataset & Variables
+
+The dataset used for this project was provided as part of the course materials and contains 2,057 customer telephone usage records. Each record includes a customer ID and five variables representing different types of telephone and service usage.
+
+| Variable | Description |
+|---|---|
+| `ID` | Unique identifier for each customer record |
+| `Fixed Calls` | Customer fixed-line call usage |
+| `Duration` | Customer call duration |
+| `Mobile` | Customer mobile usage |
+| `International` | Customer international usage |
+| `Broadband` | Customer broadband usage |
+
+The five usage variables were analyzed to explore relationships among customer behaviors, identify unusual observations, develop classification models, and group customers with similar usage patterns.
+
+For the classification portion of the analysis, `Duration` was transformed into a categorical **High/Low** variable using the median call duration as the dividing point. This allowed classification models to examine which customer usage characteristics were associated with higher or lower call duration.
+
+> **Data Source:** The dataset was provided as part of the course materials. Because the original external source and redistribution permissions could not be verified, the raw dataset is not included in this public repository.
