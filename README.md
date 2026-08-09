@@ -61,3 +61,19 @@ The usage variables were standardized before applying K-means clustering so that
 
 ### 5. Principal Component Analysis
 Principal Component Analysis (PCA) was applied to the standardized usage variables to reduce the five-dimensional dataset to two dimensions. The resulting principal components were used to visualize the customer segments identified through K-means clustering.
+
+## 📈 Analysis & Results
+
+### Classification Results
+
+A conditional inference tree was used to examine which customer usage characteristics were associated with **High** or **Low** call duration. The model identified `Fixed Calls` as the primary variable used to separate customers across multiple levels of the tree, with `International` usage providing an additional split among customers with higher fixed-call usage.
+
+The tree shows a clear progression in the High/Low classification as fixed-call usage increases. Customers with lower fixed-call usage were predominantly classified in one duration category, while customers with higher fixed-call usage increasingly shifted toward the other category. The statistically significant splits indicate that fixed-call usage was strongly associated with the call-duration classification in this dataset.
+
+![Conditional Inference Tree](images/conditional_inference_tree.png)
+
+*Conditional inference tree showing statistically significant splits used to classify customers by High or Low call duration.*
+
+
+
+
