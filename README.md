@@ -74,6 +74,14 @@ The tree shows a clear progression in the High/Low classification as fixed-call 
 
 *Conditional inference tree showing statistically significant splits used to classify customers by High or Low call duration.*
 
+### Outlier Analysis
 
+Customer usage patterns were evaluated for potential outliers using both **Z-score** and **Interquartile Range (IQR)** methods. Using multiple approaches provided different ways to identify observations that differed substantially from typical customer behavior.
+
+Boxplots were also created for each of the five usage variables. The visualizations show numerous observations beyond the upper whiskers, particularly for `Duration`, `Mobile`, `International`, and `Broadband`. These results indicate that the dataset contains customers with substantially higher usage levels than the majority of customers.
+
+![Customer Usage Boxplots](images/customer_usage_boxplots.png)
+
+*Boxplots of the five customer usage variables highlighting the presence and distribution of potential outliers.*
 
 
