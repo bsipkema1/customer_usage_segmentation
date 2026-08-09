@@ -34,3 +34,30 @@ The five usage variables were analyzed to explore relationships among customer b
 For the classification portion of the analysis, `Duration` was transformed into a categorical **High/Low** variable using the median call duration as the dividing point. This allowed classification models to examine which customer usage characteristics were associated with higher or lower call duration.
 
 > **Data Source:** The dataset was provided as part of the course materials. Because the original external source and redistribution permissions could not be verified, the raw dataset is not included in this public repository.
+
+## 🔎 Analytical Approach
+
+The analysis followed a multi-step data mining process to examine customer usage patterns from several perspectives.
+
+### 1. Descriptive Analysis
+Descriptive statistics were calculated for the five customer usage variables, including the mean, median, standard deviation, minimum, and maximum. A correlation matrix was also used to examine relationships among the variables.
+
+### 2. Classification
+Customer call duration was categorized as **High** or **Low** based on the median duration. Two classification approaches were then used to examine which customer usage characteristics were associated with these categories:
+
+- CART decision tree using `rpart`
+- Conditional inference tree using `ctree`
+
+### 3. Outlier Detection
+Potentially unusual customer usage patterns were evaluated using two methods:
+
+- Z-score detection using a ±3 standard deviation threshold
+- Interquartile Range (IQR) detection
+
+Boxplots were also used to visualize the distributions and potential outliers across the usage variables.
+
+### 4. Customer Segmentation
+The usage variables were standardized before applying K-means clustering so that differences in measurement scales would not disproportionately influence the results. Customers were then grouped into **five clusters** based on similarities in their usage behavior.
+
+### 5. Principal Component Analysis
+Principal Component Analysis (PCA) was applied to the standardized usage variables to reduce the five-dimensional dataset to two dimensions. The resulting principal components were used to visualize the customer segments identified through K-means clustering.
