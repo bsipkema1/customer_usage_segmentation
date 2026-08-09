@@ -96,4 +96,16 @@ The visualization shows a dense concentration of customers near the center of th
 
 *K-means customer segments visualized in two dimensions using Principal Component Analysis.*
 
+## 🛠️ Tools & Technologies
+
+| Tool / Technology | Use in Project |
+|---|---|
+| **R / RStudio** | Data preparation, statistical analysis, modeling, visualization, and output generation |
+| `tidyverse` | Data manipulation and preparation |
+| `rpart` & `rpart.plot` | CART decision tree modeling and visualization |
+| `party` | Conditional inference tree classification |
+| **K-means Clustering** | Customer segmentation based on similar usage patterns |
+| **Principal Component Analysis (PCA)** | Dimensionality reduction and visualization of customer segments |
+| **Z-score & IQR Methods** | Identification of potential outliers in customer usage data |
+
 
