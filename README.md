@@ -108,4 +108,30 @@ The visualization shows a dense concentration of customers near the center of th
 | **Principal Component Analysis (PCA)** | Dimensionality reduction and visualization of customer segments |
 | **Z-score & IQR Methods** | Identification of potential outliers in customer usage data |
 
+## 📂 Repository Structure
 
+```text
+customer-usage-segmentation/
+│
+├── README.md
+│
+├── code/
+│   └── customer_usage_segmentation_script.R
+│
+├── images/
+│   ├── conditional_inference_tree.png
+│   ├── customer_usage_boxplots.png
+│   └── kmeans_pca_clusters.png
+│
+└── results/
+    ├── phone_results_all.txt
+    ├── phone_cluster_1.txt
+    ├── phone_cluster_2.txt
+    ├── phone_cluster_3.txt
+    ├── phone_cluster_4.txt
+    └── phone_cluster_5.txt
+
+The `code` folder contains the complete R analysis script, while `images` contains the primary visualizations used to communicate the analytical results.
+The `results` folder contains the complete analysis output along with separate files for each of the five customer segments.
+
+> **Note:** The original dataset is not included because it was provided as part of the course materials and its original source and redistribution permissions could not be independently verified.
